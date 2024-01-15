@@ -1,0 +1,10 @@
+# Ignore storybook stories
+stories/
+src/**/*.stories.tsx
+
+# Other files and folders to ignore
+.storybook/
+node_modules/
+.gitignore
+.npmignore
+README.md
