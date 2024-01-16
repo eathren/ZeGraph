@@ -2,11 +2,12 @@
   "name": "vgraph",
   "version": "1.0.0",
   "description": "A performant canvas vertex edge graph library written for react",
-  "main": "index.js",
+  "main": "dist/VGraph.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build": "tsc --outDir dist"
   },
   "keywords": [],
   "author": "",
