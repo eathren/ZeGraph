@@ -42,4 +42,4 @@ Contributing
 Contributions are welcome. Please feel free to submit pull requests or open issues for bugs and feature requests.
 
 License
-Apache 2.0
+GNU 3.0
