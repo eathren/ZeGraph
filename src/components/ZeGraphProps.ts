@@ -3,8 +3,8 @@ export interface ZeGraphProps
   /**
    * Optional ID for the canvas.
    */
-
   id?: string
+
   /**
    * Optional width of the canvas, can be a percentage or pixel value.
    */
@@ -156,11 +156,6 @@ export interface ZeGraphProps
    * Optional callback for when the canvas is loaded.
    */
   onLoad?: (event: React.SyntheticEvent<HTMLCanvasElement, Event>) => void
-
-  /**
-   * Optional callback for when the canvas is unloaded.
-   */
-  onUnload?: (event: React.SyntheticEvent<HTMLCanvasElement, Event>) => void
 
   /**
    * Optional callback for when the canvas is resized.
