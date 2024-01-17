@@ -1,4 +1,4 @@
-export interface VeGraphProps
+export interface ZeGraphProps
   extends React.CanvasHTMLAttributes<HTMLCanvasElement> {
   /**
    * Optional ID for the canvas.

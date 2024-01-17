@@ -1,8 +1,8 @@
 {
-  "name": "VeGraph",
-  "version": "1.0.0",
+  "name": "@zenote/zegraph",
+  "version": "0.5.0",
   "description": "A performant canvas vertex edge graph library written for react",
-  "main": "dist/VeGraph.js",
+  "main": "dist/ZeGraph.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
@@ -10,8 +10,8 @@
     "build": "tsc --outDir dist"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "eathren",
+  "license": "GPL-3.0-or-later",
   "devDependencies": {
     "@storybook/addon-essentials": "7.6.8",
     "@storybook/addon-interactions": "7.6.8",
@@ -27,5 +27,19 @@
     "react-dom": "^18.2.0",
     "storybook": "7.6.8",
     "typescript": "^5.3.3"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "prettier": "^2.8.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eathren/ZeGraph.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eathren/ZeGraph/issues"
+  },
+  "homepage": "https://github.com/eathren/ZeGraph#readme"
 }
