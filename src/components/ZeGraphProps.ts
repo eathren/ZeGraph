@@ -28,6 +28,13 @@ export interface ZeGraphProps
   nodes?: Node[]
 
   /**
+   *
+   * Optional border radius for nodes
+   *
+   */
+  borderRadius?: number
+
+  /**
    * Optional callback for when the canvas is clicked.
    */
   onClick?: (event: React.MouseEvent<HTMLCanvasElement, MouseEvent>) => void

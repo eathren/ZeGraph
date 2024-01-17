@@ -22,13 +22,17 @@ export const ZeGraph = React.forwardRef<HTMLCanvasElement, ZeGraphProps>(
     const [isDragging, setIsDragging] = useState(false)
     const [lastMousePos, setLastMousePos] = useState({ x: 0, y: 0 })
 
-    const handleMouseDown = (event: React.MouseEvent<HTMLCanvasElement>) => {
+    const handleMouseDown = (event: {
+      preventDefault: () => void
+      clientX: any
+      clientY: any
+    }) => {
       event.preventDefault()
       setIsDragging(true)
       setLastMousePos({ x: event.clientX, y: event.clientY })
     }
 
-    const handleMouseMove = (event: React.MouseEvent<HTMLCanvasElement>) => {
+    const handleMouseMove = (event: { clientX: number; clientY: number }) => {
       if (isDragging) {
         const deltaX = event.clientX - lastMousePos.x
         const deltaY = event.clientY - lastMousePos.y
