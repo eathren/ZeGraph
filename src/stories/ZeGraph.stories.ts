@@ -1,16 +1,16 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
-import { VGraph } from "../components/VGraph"
+import { ZeGraph } from "../components/ZeGraph"
 
 const meta = {
-  title: "Vgraph",
-  component: VGraph,
+  title: "ZeGraph",
+  component: ZeGraph,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
   argTypes: {},
-} satisfies Meta<typeof VGraph>
+} satisfies Meta<typeof ZeGraph>
 
 export default meta
 type Story = StoryObj<typeof meta>

@@ -1,4 +1,4 @@
-export interface VGraphProps
+export interface VeGraphProps
   extends React.CanvasHTMLAttributes<HTMLCanvasElement> {
   /**
    * Optional ID for the canvas.

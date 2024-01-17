@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react"
-import { VGraphProps } from "./VGraphProps"
+import { VeGraphProps } from "./ZeGraphProps"
 import { drawNode, drawEdge } from "../util"
 import { generateDemoGraphData } from "../util/data"
 
-export const VGraph = React.forwardRef<HTMLCanvasElement, VGraphProps>(
-  ({ id = "vgraph", className, style, width, height, bgColor, ...props }) => {
+export const ZeGraph = React.forwardRef<HTMLCanvasElement, VeGraphProps>(
+  ({ id = "ZeGraph", className, style, width, height, bgColor, ...props }) => {
     const combinedStyle = {
       width: width,
       height: height,
@@ -81,7 +81,7 @@ export const VGraph = React.forwardRef<HTMLCanvasElement, VGraphProps>(
   }
 )
 
-VGraph.defaultProps = {
+ZeGraph.defaultProps = {
   width: "100%",
   height: "100%",
   bgColor: "#eeeeee",

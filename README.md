@@ -1,8 +1,8 @@
-# VGraph
+# ZeGraph
 
 ## Overview
 
-`VGraph` is a versatile React component designed for rendering interactive graphs using HTML5 Canvas. It features dynamic visualization of nodes and edges, and comes with built-in support for zooming, panning, and layouts, making it ideal for applications requiring graphical representations of networks systems with the immediate rendering system for performant graphs.
+`ZeGraph` is a versatile React component designed for rendering interactive graphs using HTML5 Canvas. It features dynamic visualization of nodes and edges, and comes with built-in support for zooming, panning, and layouts, making it ideal for applications requiring graphical representations of networks systems with the immediate rendering system for performant graphs.
 
 ## Features
 
@@ -12,20 +12,20 @@
 
 ## Installation
 
-To use `VGraph` in your project, include the `VGraph.tsx` file in your components directory.
+To use `ZeGraph` in your project, include the `ZeGraph.tsx` file in your components directory.
 
 Usage
-Import VGraph into your React component and include it as demonstrated in the example below:
+Import ZeGraph into your React component and include it as demonstrated in the example below:
 
 ```jsx
 Copy code
 import React from 'react';
-import { VGraph } from './components/VGraph';
+import { ZeGraph } from './components/ZeGraph';
 
 const App = () => {
   return (
     <div style={{ width: '800px', height: '600px' }}>
-      <VGraph />
+      <ZeGraph />
     </div>
   );
 };

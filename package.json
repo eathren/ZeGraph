@@ -1,8 +1,8 @@
 {
-  "name": "vgraph",
+  "name": "VeGraph",
   "version": "1.0.0",
   "description": "A performant canvas vertex edge graph library written for react",
-  "main": "dist/VGraph.js",
+  "main": "dist/VeGraph.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
