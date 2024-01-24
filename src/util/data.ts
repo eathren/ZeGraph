@@ -1,7 +1,7 @@
-import { Edge, Node } from "../types"
+import { CanvasEdge, CanvasNode } from "../types"
 
 export const generateDemoGraphData = () => {
-  const nodes: Node[] = Array.from({ length: 30 }, (_, index) => ({
+  const nodes: CanvasNode[] = Array.from({ length: 30 }, (_, index) => ({
     id: `node-${index}`,
     label: `Node ${index}`,
     x: Math.random() * 800, // Randomize or set positions
@@ -12,7 +12,7 @@ export const generateDemoGraphData = () => {
     textColor: "black",
   }))
 
-  const edges: Edge[] = Array.from({ length: 30 }, (_, index) => ({
+  const edges: CanvasEdge[] = Array.from({ length: 30 }, (_, index) => ({
     id: `edge-${index}`,
     source: `node-${index}`,
     target: `node-${(index + 1) % 10}`, // Connect to next node (circular)

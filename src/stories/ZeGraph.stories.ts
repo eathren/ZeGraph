@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
 import { ZeGraph } from "../components/ZeGraph"
+import { LayoutType } from "../types"
 
 const meta = {
   title: "ZeGraph",
@@ -19,5 +20,6 @@ export const Primary: Story = {
   args: {
     width: "1000px",
     height: "1000px",
+    layout: LayoutType.SEQUENTIAL,
   },
 }

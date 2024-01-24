@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from "react"
 import { ZeGraphProps } from "./ZeGraphProps"
-import { drawNode, drawEdge, zoom } from "../util"
+import { drawSequential, zoom } from "../util"
 import { generateDemoGraphData } from "../util/data"
+import { LayoutType } from "../types"
 
 const { nodes, edges } = generateDemoGraphData() // For development purposes
 
@@ -12,6 +13,7 @@ export const ZeGraph = ({
   width,
   height,
   bgColor,
+  layout = LayoutType.SEQUENTIAL,
   ...props
 }: ZeGraphProps) => {
   const combinedStyle = {
@@ -118,14 +120,22 @@ export const ZeGraph = ({
       context.save()
       context.translate(offset.x, offset.y)
       context.scale(scale, scale)
-      edges.forEach((edge) => {
-        const sourceNode = nodes.find((n) => n.id === edge.source)
-        const targetNode = nodes.find((n) => n.id === edge.target)
-        if (sourceNode && targetNode) {
-          drawEdge(context, sourceNode, targetNode, edge)
-        }
-      })
-      nodes.forEach((node) => drawNode(context, node))
+      switch (layout) {
+        case LayoutType.SEQUENTIAL:
+          drawSequential(context, nodes, edges)
+        case LayoutType.ORGANIC:
+          break
+        default:
+          break
+      }
+      // edges.forEach((edge) => {
+      //   const sourceNode = nodes.find((n) => n.id === edge.source)
+      //   const targetNode = nodes.find((n) => n.id === edge.target)
+      //   if (sourceNode && targetNode) {
+      //     drawEdge(context, sourceNode, targetNode, edge)
+      //   }
+      // })
+      // nodes.forEach((node) => drawNode(context, node))
       context.restore()
     }
   }
@@ -151,4 +161,5 @@ ZeGraph.defaultProps = {
   width: "100%",
   height: "100%",
   bgColor: "#eeeeee",
+  layout: LayoutType.SEQUENTIAL,
 }

@@ -1,3 +1,5 @@
+import { LayoutType } from "../types/Layouts"
+
 export interface ZeGraphProps
   extends React.CanvasHTMLAttributes<HTMLCanvasElement> {
   /**
@@ -9,6 +11,11 @@ export interface ZeGraphProps
    * Optional width of the canvas, can be a percentage or pixel value.
    */
   width?: string
+
+  /**
+   * Optional layout for the canvas.
+   */
+  layout?: LayoutType
 
   /**
    * Optional height of the canvas, can be a percentage or pixel value.
@@ -25,7 +32,7 @@ export interface ZeGraphProps
    * Optional nodes to render on the canvas.
    *
    */
-  nodes?: Node[]
+  nodes?: CanvasNode[]
 
   /**
    *

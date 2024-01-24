@@ -1,4 +1,4 @@
-export interface Edge {
+export interface CanvasEdge {
   id: string
   source: string
   target: string
