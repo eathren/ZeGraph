@@ -118,7 +118,6 @@ export const ZeGraph = ({
       context.save()
       context.translate(offset.x, offset.y)
       context.scale(scale, scale)
-      nodes.forEach((node) => drawNode(context, node))
       edges.forEach((edge) => {
         const sourceNode = nodes.find((n) => n.id === edge.source)
         const targetNode = nodes.find((n) => n.id === edge.target)
@@ -126,6 +125,7 @@ export const ZeGraph = ({
           drawEdge(context, sourceNode, targetNode, edge)
         }
       })
+      nodes.forEach((node) => drawNode(context, node))
       context.restore()
     }
   }
