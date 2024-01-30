@@ -2,6 +2,8 @@
 
 ## Overview
 
+This code is still in active development pending layouts.
+
 `ZeGraph` is a versatile React component designed for rendering interactive graphs using HTML5 Canvas. It features dynamic visualization of nodes and edges, and comes with built-in support for zooming, panning, and layouts, making it ideal for applications requiring graphical representations of networks systems with the immediate rendering system for performant graphs.
 
 ## Features
